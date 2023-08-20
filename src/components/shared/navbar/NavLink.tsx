@@ -1,4 +1,4 @@
-export const navlinks = [
+export const navlinks: { href: string; key: string; label: string }[] = [
   {
     href: '/tutor',
     key: 'tutor',
