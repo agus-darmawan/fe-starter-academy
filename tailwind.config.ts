@@ -1,14 +1,11 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { fontFamily } = require('tailwindcss/defaultTheme');
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
+  darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
-      },
       colors: {
         blue: {
           starter: '#314288',
@@ -24,15 +21,21 @@ module.exports = {
           starter: '#FCCE47',
         },
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      fontFamily: {
+        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
       keyframes: {
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
-            opacity: 0.99,
+            opacity: '0.99',
             filter:
               'drop-shadow(0 0 1px rgba(252, 211, 77)) drop-shadow(0 0 15px rgba(245, 158, 11)) drop-shadow(0 0 1px rgba(252, 211, 77))',
           },
           '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': {
-            opacity: 0.4,
+            opacity: '0.4',
             filter: 'none',
           },
         },
@@ -52,4 +55,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-};
+} satisfies Config;

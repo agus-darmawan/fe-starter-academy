@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Layout from '@/components/layout/Layout';
+import MainLayout from '@/components/layout/MainLayout';
 import Seo from '@/components/Seo';
 
 export default function index() {
   return (
-    <Layout>
+    <MainLayout>
       <Seo templateTitle='Home' />
       <div className='bg-blue-backgraund min-h-screen'>index</div>
       <div className='bg-blue-backgraund min-h-screen'>indexw</div>
-    </Layout>
+    </MainLayout>
   );
 }
