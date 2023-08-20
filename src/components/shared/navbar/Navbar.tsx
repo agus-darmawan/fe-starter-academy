@@ -47,10 +47,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50  flex h-20 rounded-b-[18px] lg:h-28 lg:px-10 ${
+      className={`fixed left-0 right-0 top-0 z-50  flex  rounded-b-[18px] lg:px-10 ${
         isBlur
-          ? 'bg-white/60 backdrop-blur-sm duration-500'
-          : 'bg-white duration-500'
+          ? 'h-20 bg-white/60 backdrop-blur-sm duration-500 lg:h-24'
+          : 'h-24 bg-white duration-500 lg:h-28'
       }`}
     >
       <div className='hidden w-full flex-row justify-center lg:flex'>
@@ -85,7 +85,7 @@ export default function Navbar() {
                 animate={isDropDownProduct ? 'enter' : 'exit'}
               >
                 <div
-                  className='flex w-max flex-col gap-3 rounded-xl  border-s bg-black/5 px-3 py-4 backdrop-blur-sm'
+                  className='flex w-max flex-col gap-3 rounded-xl  border-s bg-white/50 px-3 py-4 backdrop-blur-sm'
                   onMouseEnter={() => {
                     setDropDownProduct(true);
                   }}

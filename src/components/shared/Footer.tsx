@@ -4,8 +4,8 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className='bg-blue-backgraund rounded-t-[20px]'>
-      <div className='2 flex flex-col gap-10 py-12 lg:grid lg:grid-cols-2 lg:gap-12 lg:px-12'>
+    <footer className='bg-blue-starter'>
+      <div className='2 bg-blue-backgraund flex flex-col gap-10 rounded-t-[20px] py-12 lg:grid lg:grid-cols-2 lg:gap-12 lg:px-12'>
         <div className=' col-start-1 col-end-2 '>
           <div className='flex flex-col gap-10 md:grid md:grid-cols-3 md:gap-7'>
             <div className='2 col-start-1 col-end-3 '>
