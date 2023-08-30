@@ -55,14 +55,16 @@ export default function Navbar() {
     >
       <div className='hidden w-full flex-row justify-center lg:flex'>
         <section className='flex flex-row items-center justify-start lg:w-10/12'>
-          <Image
-            alt='Logo Starter Academy'
-            width={60}
-            height={60}
-            priority={true}
-            src='/images/logo.svg'
-            className='h-16'
-          />
+          <Link href='/'>
+            <Image
+              alt='Logo Starter Academy'
+              width={60}
+              height={60}
+              priority={true}
+              src='/images/logo.svg'
+              className='h-16'
+            />
+          </Link>
           <ul className='text-blue-starter hidden flex-row text-xl font-semibold lg:flex'>
             <li
               className={`ml-12 flex flex-row `}
