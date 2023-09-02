@@ -1,8 +1,9 @@
-import Seo from '@/components/Seo';
-import MainLayout from '@/components/layout/MainLayout';
+import Image from 'next/image';
+
 import Button from '@/components/buttons/Button';
 import PrevButton from '@/components/buttons/PrevButton';
-import Image from 'next/image';
+import MainLayout from '@/components/layout/MainLayout';
+import Seo from '@/components/Seo';
 
 export default function profile() {
   return (

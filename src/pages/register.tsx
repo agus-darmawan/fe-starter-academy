@@ -1,7 +1,7 @@
-import Seo from '@/components/Seo';
-import Button from '@/components/buttons/Button';
-
 import Image from 'next/image';
+
+import Button from '@/components/buttons/Button';
+import Seo from '@/components/Seo';
 
 export default function register() {
   return (

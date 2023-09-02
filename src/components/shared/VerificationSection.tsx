@@ -1,7 +1,8 @@
 // VerificationSection.js
 
-import React, { useState } from 'react';
 import Image from 'next/image';
+import React, { useState } from 'react';
+
 import DetailsButton from '@/components/buttons/DetailsButton';
 import VerifyButton from '@/components/buttons/VerifyButton';
 

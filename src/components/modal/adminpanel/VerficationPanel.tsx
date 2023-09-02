@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import Select from '@/components/shared/Select';
+
 import { Option } from '@/components/shared/Option';
+import Select from '@/components/shared/Select';
 import VerificationSection from '@/components/shared/VerificationSection';
 
 const options: Option[] = [
@@ -24,17 +25,8 @@ function VerificationPanel() {
           onChange={(selection: Option) => setSelectedItem(selection)}
         />
       </div>
-      <div className='bg-blue-backgraund mt-10 overflow-auto rounded-xl'>
+      <div className='mt-10 overflow-auto rounded-xl'>
         <div className='flex-grow'>
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
-          <VerificationSection />
           <VerificationSection />
         </div>
       </div>

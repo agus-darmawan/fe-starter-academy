@@ -1,8 +1,8 @@
-import Seo from '@/components/Seo';
+import Image from 'next/image';
+
 import Button from '@/components/buttons/Button';
 import PrevButton from '@/components/buttons/PrevButton';
-
-import Image from 'next/image';
+import Seo from '@/components/Seo';
 
 export default function nextRegister() {
   return (

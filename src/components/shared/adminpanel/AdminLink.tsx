@@ -1,16 +1,21 @@
 export const adminLinks: { href: string; key: string; label: string }[] = [
   {
-    href: '/',
+    href: '/adminpanel',
+    key: 'home',
+    label: 'Home',
+  },
+  {
+    href: '/adminpanel/verification',
     key: 'verification',
     label: 'Verification',
   },
   {
-    href: '/',
+    href: '/adminpanel/kurikulum',
     key: 'kurikulum',
     label: 'Kurikulum',
   },
   {
-    href: '/',
+    href: '/adminpanel/tutor',
     key: 'tutor',
     label: 'Tutor',
   },

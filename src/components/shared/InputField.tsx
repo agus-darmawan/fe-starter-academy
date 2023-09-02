@@ -2,12 +2,18 @@ interface ButtonProps {
   readonly link?: string;
   readonly text?: string;
   readonly type?: string;
+  readonly customClassName?: string;
 }
 
-const InputField = ({ text, type }: ButtonProps) => {
+const InputField = ({ text, type, customClassName }: ButtonProps) => {
+  const defaultClassName = 'block pt-5';
+  const onlyTop = 'block';
+
+  const combinedClassName = customClassName ? `${onlyTop}` : defaultClassName;
+
   return (
-    <label className=' block pt-5'>
-      <span className="text-blue-starter block text-sm font-bold after:ml-0.5 after:text-red-500 after:content-['']">
+    <label className={combinedClassName}>
+      <span className="text-blue-starter afteasdr:ml-0.5 block text-sm font-bold after:text-red-500 after:content-['']">
         {text}
       </span>
       <input
