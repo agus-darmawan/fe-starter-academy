@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        colorMain: '#314288',
+        colorMain2: '#D0D5EB',
         blue: {
           starter: '#314288',
           backgraund: '#D0D5EB',
@@ -23,6 +25,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-starter': 'linear-gradient(to bottom, #CBD1EB , #fff)',
       },
       fontFamily: {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
