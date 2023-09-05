@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'LexendDeca', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -28,6 +28,10 @@ a {
 
 .debug3 {
   border: 4px solid green;
+}
+
+.debug4 {
+  border: 4px solid blue;
 }
 
 .myswiper .swiper-button-next,
