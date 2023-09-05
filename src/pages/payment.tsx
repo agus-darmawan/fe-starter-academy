@@ -13,7 +13,7 @@ export default function payment() {
             <h1 className='font-poppins mb-[34px] text-4xl font-bold text-white'>
               Pilih Metode Pembayaran
             </h1>
-            <div className='flex items-center gap-6'>
+            <div className='debug flex items-center gap-6'>
               <input
                 id='default-radio-1'
                 type='radio'
