@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '@/components/buttons/Button';
 import MainLayout from '@/components/layout/MainLayout';
 import Seo from '@/components/Seo';
-
+import Team from '@/components/shared/Team';
 export default function HomePage() {
   return (
     <MainLayout>
@@ -74,7 +74,17 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className='bg-blue-starter min-h-screen'></div>
+      <div className='bg-blue-starter min-h-screen'>
+        <div className='container mx-auto flex-col items-center justify-center'>
+          <h1 className='text-blue-backgraund pb-4 pt-16 text-center text-4xl font-bold md:pb-8 md:pt-28 md:text-5xl lg:text-6xl'>
+            Meet Our Team
+          </h1>
+          <Team />
+          <h1 className='text-blue-backgraund py-10 text-center  text-2xl drop-shadow-2xl md:py-32 md:text-3xl lg:text-4xl'>
+            #SemuaBisaBelajar
+          </h1>
+        </div>
+      </div>
     </MainLayout>
   );
 }
